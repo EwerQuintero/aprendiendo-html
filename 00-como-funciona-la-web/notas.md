@@ -28,4 +28,7 @@ Abrí Amazon, presioné F12, entré a la pestaña Network y recargué con F5.
 - Lo que más me sorprendió: que una sola página haga 114 peticiones, y que muchas sean imágenes y "pings" que ni se ven.
 
 ## Reto bonus: nslookup
-Pendiente: ejecutar `nslookup google.com` en la terminal.
+Ejecuté `nslookup google.com` y el DNS (8.8.8.8) me devolvió varias
+direcciones: varias IPv6 y una IPv4 (142.251.132.174). Google tiene muchos
+servidores, y el DNS me da varias direcciones para repartir la carga y
+tener respaldo si una falla.
