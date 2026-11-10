@@ -4,7 +4,7 @@ Mi camino aprendiendo HTML desde cero, construyendo un proyecto por módulo.
 
 ## 📚 Progreso
 
-- [ ] 00 - Cómo funciona la web
+- [x] 00 - Cómo funciona la web
 - [ ] 01 - Primeros pasos
 - [ ] 02 - Texto y enlaces
 - [ ] 03 - Agrupar y listar
