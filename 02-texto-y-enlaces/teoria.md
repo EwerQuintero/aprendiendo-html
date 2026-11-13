@@ -79,6 +79,7 @@ Se crean con la etiqueta `<a>` y el atributo `href`:
 - `href` es la dirección a la que lleva el enlace.
 - `target="_blank"` abre en una pestaña nueva.
 - `rel="noopener noreferrer"` se agrega junto a `_blank` por seguridad.
+- Para ir a otra web hay que escribir la dirección completa, con `https://`.
 
 ## Experimentos
 - **Tamaño de los títulos:** van decreciendo de `h1` (el más grande) a `h6`
@@ -92,18 +93,5 @@ Se crean con la etiqueta `<a>` y el atributo `href`:
 - **`<sub>` y `<sup>`:** `sub` pone el texto abajo (H₂O) y `sup` arriba (x²).
 - **Borrar la etiqueta de apertura de un título:** el texto pierde el tamaño
   y la negrita propios del título y se ve como texto normal.
-- **Saltar de `h1` a `h4`:** pendiente de probar.
-- **Enlace con y sin `target="_blank"`:** pendiente de probar.
-- **Enlace sin `https://`:** pendiente de probar.
-
-## Lo que aprendí (hasta ahora)
-- Los títulos dan estructura y van de `h1` a `h6`, sin saltarse niveles.
-- `strong` y `em` se ven igual que `b` e `i`, pero significan más.
-- `pre` respeta los espacios; `p` no.
-- `sub` baja el texto y `sup` lo sube.
-
-## Pendiente
-- [ ] Cerrar experimentos (h1 a h4, enlace sin https, target="_blank")
-- [ ] Ejercicio 2: enlaces
-- [ ] Proyecto: artículo sobre Hollow Knight
-- [ ] Completar "Lo que aprendí"
+- **Saltar de `h1` a `h4`:** cada título se ve según su propio nivel y el
+  navegador no avisa de nada. Saltarse niveles es mala
