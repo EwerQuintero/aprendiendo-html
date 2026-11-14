@@ -8,7 +8,7 @@ Mi camino aprendiendo HTML desde cero, construyendo un proyecto por módulo.
 |--------|----------|:------:|
 | [00 - Cómo funciona la web](00-como-funciona-la-web/notas.md) | Resumen con mis palabras | Completado |
 | [01 - Primeros pasos](01-primeros-pasos/teoria.md) | [Página "Sobre mí"](01-primeros-pasos/proyecto/index.html) | Completado |
-| 02 - Texto y enlaces | Artículo sobre mi hobby | Pendiente |
+| [02 - Texto y enlaces](02-texto-y-enlaces/teoria.md) | [Ficha de Hollow Knight](02-texto-y-enlaces/proyecto/index.html) | Completado |
 | 03 - Agrupar y listar | Receta o top 10 | Pendiente |
 | 04 - Semántica y estilos básicos | Página personal con estructura completa | Pendiente |
 | 05 - Multimedia y tablas | Galería o página de un juego favorito | Pendiente |
@@ -17,7 +17,7 @@ Mi camino aprendiendo HTML desde cero, construyendo un proyecto por módulo.
 
 ## Herramientas
 
-VS Code, Live Server, Chrome (DevTools), Git y GitHub.
+VS Code, Live Server, Prettier, Chrome (DevTools), Git y GitHub.
 
 ## Estructura de cada módulo
 

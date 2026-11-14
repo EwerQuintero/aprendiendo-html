@@ -1,6 +1,6 @@
 # Módulo 02: Texto y enlaces
 
-> Estado: en progreso.
+> Estado: completado.
 
 ## Títulos (h1 a h6)
 Hay seis niveles, de `<h1>` (el más importante) a `<h6>` (el menos importante).
@@ -39,6 +39,8 @@ H<sub>2</sub>O
 x<sup>2</sup>
 ```
 
+Solo tienen sentido para fórmulas, exponentes, unidades o notas. No sirven para achicar texto.
+
 ## Texto preformateado
 `<pre>` respeta los espacios y saltos de línea tal como los escribo. Útil para código o poemas.
 
@@ -69,6 +71,9 @@ Se crean con la etiqueta `<a>` y el atributo `href`:
 <!-- Interno: a otra página de mi proyecto -->
 <a href="otra-pagina.html">Otra página</a>
 
+<!-- Interno en otra carpeta: subo dos niveles con ../../ -->
+<a href="../../01-primeros-pasos/proyecto/index.html">Sobre mí</a>
+
 <!-- Correo -->
 <a href="mailto:micorreo@ejemplo.com">Escríbeme</a>
 
@@ -80,6 +85,8 @@ Se crean con la etiqueta `<a>` y el atributo `href`:
 - `target="_blank"` abre en una pestaña nueva.
 - `rel="noopener noreferrer"` se agrega junto a `_blank` por seguridad.
 - Para ir a otra web hay que escribir la dirección completa, con `https://`.
+- En las rutas siempre se usa `/`, nunca `\`.
+- `../` sube una carpeta; se escribe una vez por cada nivel que se sube.
 
 ## Experimentos
 - **Tamaño de los títulos:** van decreciendo de `h1` (el más grande) a `h6`
@@ -91,6 +98,8 @@ Se crean con la etiqueta `<a>` y el atributo `href`:
 - **`<pre>` vs `<p>`:** `pre` respeta los espacios y los saltos de línea tal
   como los escribo; `p` los junta en uno solo.
 - **`<sub>` y `<sup>`:** `sub` pone el texto abajo (H₂O) y `sup` arriba (x²).
+  En mi proyecto no encontré un lugar natural para usarlos y preferí no
+  forzarlos.
 - **Borrar la etiqueta de apertura de un título:** el texto pierde el tamaño
   y la negrita propios del título y se ve como texto normal.
 - **Saltar de `h1` a `h4`:** cada título se ve según su propio nivel y el
@@ -108,29 +117,46 @@ Se crean con la etiqueta `<a>` y el atributo `href`:
 - **Enlace interno:** `href="archivo.html"` busca el archivo en la misma
   carpeta de la página actual. Funciona porque el archivo existe en mi
   proyecto.
+- **Rutas relativas:** para ir a una carpeta hermana hay que subir con
+  `../` hasta una carpeta común y luego bajar al archivo. Con `\` o sin
+  subir de carpeta, el enlace no funciona.
 - **Enlace `mailto:`:** abre el programa de correo del computador (Outlook,
-  etc.) con el destinatario ya escrito.
+  etc.) con el destinatario ya escrito. En un repo público no se pone el
+  correo personal.
 - **Poema con `p`, `br` y `pre`:** con solo `p` todo sale en una línea.
   Con `br` se ven los saltos, pero no la sangría. Con `pre` se respetan
   saltos y espacios, y la letra cambia a monoespaciada.
 - **`<hr>`:** traza una línea horizontal que divide el contenido en
   secciones. No lleva contenido ni cierre.
+- **Lista dentro de un `<p>`:** un `<ul>` no puede ir dentro de un `<p>`.
+  Chrome lo tolera, pero Prettier da error. Las listas van al lado de los
+  párrafos, no dentro.
 
-## Lo que aprendí (hasta ahora)
+## Lo que aprendí
 - Los títulos dan estructura y van de `h1` a `h6`, sin saltarse niveles.
 - `strong` y `em` se ven igual que `b` e `i`, pero significan más.
 - `pre` respeta los espacios; `p` no.
-- `sub` baja el texto y `sup` lo sube.
+- `sub` baja el texto y `sup` lo sube, pero solo se usan cuando tienen
+  sentido.
 - El navegador no avisa de errores: a veces adivina bien (un título sin
   cerrar seguido de otro título) y a veces no (seguido de un `<p>`).
 - Un enlace externo necesita `https://`, si no, se busca dentro de mi proyecto.
 - Hay enlaces externos, internos y de correo, y `target="_blank"` controla
   si se abren en otra pestaña.
+- Las rutas usan `/` y `../` para subir de carpeta.
 - `br` sirve para saltos dentro de un párrafo, `pre` para respetar la forma
   exacta del texto y `hr` para separar secciones.
+- Prettier y las extensiones ayudan a encontrar errores que el navegador
+  esconde.
+
+## Proyecto
+Ficha de Hollow Knight: [proyecto/index.html](proyecto/index.html)
+
+Cumple 12 de los 13 requisitos. El único pendiente es el uso de `sub` o
+`sup` con sentido.
 
 ## Pendiente
 - [x] Probar `target="_blank"` (ejercicio de enlaces)
 - [x] Ejercicio `04-poema.html` (`pre`, `br`, `hr`)
-- [ ] Proyecto: artículo sobre Hollow Knight
-- [ ] Completar "Lo que aprendí" al terminar el módulo
+- [x] Proyecto: ficha de Hollow Knight
+- [x] Completar "Lo que aprendí"
