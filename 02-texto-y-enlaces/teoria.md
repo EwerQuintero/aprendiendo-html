@@ -110,6 +110,11 @@ Se crean con la etiqueta `<a>` y el atributo `href`:
   proyecto.
 - **Enlace `mailto:`:** abre el programa de correo del computador (Outlook,
   etc.) con el destinatario ya escrito.
+- **Poema con `p`, `br` y `pre`:** con solo `p` todo sale en una línea.
+  Con `br` se ven los saltos, pero no la sangría. Con `pre` se respetan
+  saltos y espacios, y la letra cambia a monoespaciada.
+- **`<hr>`:** traza una línea horizontal que divide el contenido en
+  secciones. No lleva contenido ni cierre.
 
 ## Lo que aprendí (hasta ahora)
 - Los títulos dan estructura y van de `h1` a `h6`, sin saltarse niveles.
@@ -121,9 +126,11 @@ Se crean con la etiqueta `<a>` y el atributo `href`:
 - Un enlace externo necesita `https://`, si no, se busca dentro de mi proyecto.
 - Hay enlaces externos, internos y de correo, y `target="_blank"` controla
   si se abren en otra pestaña.
+- `br` sirve para saltos dentro de un párrafo, `pre` para respetar la forma
+  exacta del texto y `hr` para separar secciones.
 
 ## Pendiente
 - [x] Probar `target="_blank"` (ejercicio de enlaces)
-- [ ] Ejercicio `04-poema.html` (`pre`, `br`, `hr`)
+- [x] Ejercicio `04-poema.html` (`pre`, `br`, `hr`)
 - [ ] Proyecto: artículo sobre Hollow Knight
 - [ ] Completar "Lo que aprendí" al terminar el módulo
