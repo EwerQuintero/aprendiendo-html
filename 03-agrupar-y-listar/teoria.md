@@ -157,8 +157,17 @@ Pares de término y descripción.
 - `s`: algo que ya no es correcto o relevante.
 
 ## Experimentos
-- **div vs span:** ___
-- **id repetido vs class repetida:** ___
+- **div vs span:** los `div` se apilan uno debajo del otro (bloque). El
+  `span` se queda dentro de la línea y por sí solo no cambia nada visual;
+  sirve para marcar un trozo de texto y darle estilo con CSS después.
+- **id repetido vs class repetida:** a la vista no cambian nada. El
+  navegador no avisa si repito un `id`, pero es un error: el `id` debe ser
+  único. La `class` sí se puede repetir.
+- **div dentro de un `p`:** el `div` es de bloque y rompe la línea, partiendo
+  la frase. Para marcar un trozo dentro de un texto se usa `span`.
+- **div sin cerrar:** cada `</div>` cierra el `div` abierto más reciente,
+  así que otro `div` no lo cierra. El navegador lo cierra solo al final y
+  no avisa. Con CSS puede romper el diseño, así que siempre hay que cerrar.
 - **ul vs ol:** ___
 - **Lista dentro de un `p`:** ___
 - **Lista anidada mal puesta:** ___
@@ -167,11 +176,13 @@ Pares de término y descripción.
 - **del e ins:** ___
 
 ## Lo que aprendí
-- ___
+- `div` es de bloque y `span` es en línea.
+- `id` es único y `class` se puede repetir; el navegador no avisa si me
+  equivoco.
 - ___
 
 ## Pendiente
-- [ ] Ejercicio: div, span, id y class
+- [x] Ejercicio: div, span, id y class
 - [ ] Ejercicio: listas
 - [ ] Ejercicio: citas y cambios en el texto
 - [ ] Proyecto: receta o top 10
