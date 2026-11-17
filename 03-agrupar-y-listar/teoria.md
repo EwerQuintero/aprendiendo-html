@@ -168,22 +168,39 @@ Pares de término y descripción.
 - **div sin cerrar:** cada `</div>` cierra el `div` abierto más reciente,
   así que otro `div` no lo cierra. El navegador lo cierra solo al final y
   no avisa. Con CSS puede romper el diseño, así que siempre hay que cerrar.
-- **ul vs ol:** ___
-- **Lista dentro de un `p`:** ___
-- **Lista anidada mal puesta:** ___
-- **blockquote vs q:** ___
-- **abbr con title:** ___
-- **del e ins:** ___
+- **ul vs ol:** `ul` usa viñetas y `ol` usa números. En una lista anidada,
+  la interna se ve con más sangría y otra viñeta.
+- **dl:** `dt` es el término y `dd` su descripción; el `dd` se ve con
+  sangría.
+- **Lista dentro de un `p`:** no se puede. El `p` y la lista van uno al
+  lado del otro: `<p>Título:</p>` y luego el `<ul>`.
+- **Lista anidada mal puesta:** debe ir dentro de un `<li>`, no pegada al
+  `<ul>`. Dentro de `ul` y `ol` solo van `li`.
+- **ol sin cerrar:** lo que viene después queda dentro de la lista y la
+  página se ve rara.
+- **blockquote vs q:** `blockquote` es una cita larga en bloque, con
+  sangría. `q` es una cita corta en línea y el navegador le pone comillas.
+- **abbr con title:** al pasar el mouse se ve el significado (con puntitos
+  debajo de la palabra). Sin `title` no sirve.
+- **del e ins:** `del` se ve tachado (cambio hecho) e `ins` subrayado
+  (texto añadido). `s` se ve igual que `del`, pero significa "ya no es
+  relevante".
 
 ## Lo que aprendí
 - `div` es de bloque y `span` es en línea.
 - `id` es único y `class` se puede repetir; el navegador no avisa si me
   equivoco.
-- ___
+- `ul` es para listas sin orden y `ol` para listas donde el orden importa.
+- Las listas van al lado de los párrafos, nunca dentro, y las anidadas van
+  dentro de un `li`.
+- `blockquote`, `q` y `cite` sirven para citas, cada una con su uso.
+- `abbr` necesita `title` para ser útil.
+- `del`, `ins` y `s` se parecen visualmente, pero cada una tiene un
+  significado distinto.
 
 ## Pendiente
 - [x] Ejercicio: div, span, id y class
-- [ ] Ejercicio: listas
-- [ ] Ejercicio: citas y cambios en el texto
+- [x] Ejercicio: listas
+- [x] Ejercicio: citas y cambios en el texto
 - [ ] Proyecto: receta o top 10
-- [ ] Completar "Lo que aprendí"
+- [ ] Completar "Lo que aprendí" al terminar el módulo
